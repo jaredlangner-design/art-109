@@ -49,19 +49,19 @@ main {
     display: inline-block;
 }
 
-#image-0 {
+#image-1 {
     position: absolute;
     top: 50px;
     left: 20vw;
 }
 
-#image-1 {
+#image-2 {
     position: absolute;
     top: 250px;
     right: 20vw;
 }
 
-#image-2 {
+#image-3 {
     position: fixed;
     top: 20px;
     left: 150px;
