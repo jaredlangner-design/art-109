@@ -4,13 +4,11 @@ document.querySelector("#image-1").addEventListener("click", function(){
 })
 
 document.querySelector("#image-2").addEventListener("click", function(){
-    document.querySelector("#image-2").style.display = "none";
-    // document.querySelector("#image-1").style.visibility = "hidden";
+    document.querySelector("#image-2").style.visibility = "hidden";
 })
 
 document.querySelector("#image-3").addEventListener("click", function(){
-    document.querySelector("#image-3").style.display = "none";
-    // document.querySelector("#image-2").style.visibility = "hidden";
+    document.querySelector("#image-3").style.visibility = "hidden";
 })
 
 document.querySelector("#image-4").addEventListener("click", function(){
@@ -39,4 +37,44 @@ document.querySelector("#image-9").addEventListener("click", function(){
 
 document.querySelector("#image-10").addEventListener("click", function(){
     document.querySelector("#image-10").style.visibility = "hidden";
+})
+
+document.querySelector("#image-11").addEventListener("click", function(){
+    document.querySelector("#image-11").style.visibility = "hidden";
+})
+
+document.querySelector("#image-12").addEventListener("click", function(){
+    document.querySelector("#image-12").style.visibility = "hidden";
+})
+
+document.querySelector("#image-13").addEventListener("click", function(){
+    document.querySelector("#image-13").style.visibility = "hidden";
+})
+
+document.querySelector("#image-14").addEventListener("click", function(){
+    document.querySelector("#image-14").style.visibility = "hidden";
+})
+
+document.querySelector("#image-15").addEventListener("click", function(){
+    document.querySelector("#image-15").style.visibility = "hidden";
+})
+
+document.querySelector("#image-16").addEventListener("click", function(){
+    document.querySelector("#image-16").style.visibility = "hidden";
+})
+
+document.querySelector("#image-17").addEventListener("click", function(){
+    document.querySelector("#image-17").style.visibility = "hidden";
+})
+
+document.querySelector("#image-18").addEventListener("click", function(){
+    document.querySelector("#image-18").style.visibility = "hidden";
+})
+
+document.querySelector("#image-19").addEventListener("click", function(){
+    document.querySelector("#image-19").style.visibility = "hidden";
+})
+
+document.querySelector("#image-20").addEventListener("click", function(){
+    document.querySelector("#image-20").style.visibility = "hidden";
 })

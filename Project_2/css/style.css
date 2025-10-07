@@ -31,13 +31,13 @@ body {
     font-size: 1.6rem;
    /* font-size 1.6rem is now the same as 16px */
    line-height: 1.6;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   background-color: black;
+   font-family: "Bitcount Prop Double Ink", system-ui;
+   background-color: #181A18;
 }
 
 header {
     padding: 50px;
-    background-color: cyan;
+    background-color: yellowgreen;
     text-align: center;
 }
 
@@ -47,22 +47,5 @@ main {
 
 .image-div {
     display: inline-block;
+    margin: 20px 1vw;
 }
-
-/* #image-1 {
-    position: absolute;
-    top: 50px;
-    left: 20vw;
-}
-
-#image-2 {
-    position: absolute;
-    top: 250px;
-    right: 20vw;
-}
-
-#image-3 {
-    position: fixed;
-    top: 20px;
-    left: 150px;
-} */
