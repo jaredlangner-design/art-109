@@ -1,0 +1,157 @@
+body {
+    animation: change-color 2s infinite alternate;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: green;
+    }
+
+    25% {
+        background-color: purple;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    75% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: orange;
+    }
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate(40px, 2px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate(40px, -2px);
+    }
+}
+
+@keyframes background-panic {
+
+    0%,
+    100% {
+        background-color: #000;
+    }
+
+    50% {
+        background-color: #fff;
+    }
+}
+
+
+
+header {
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.smokum-regular {
+    font-family: "Smokum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.section-2 {
+    animation: skew 1s infinite alternate;
+    font-size: larger;
+}
+
+@keyframes skew {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    100% {
+        transform: skew(30deg, 20deg);
+    }
+}
+
+@keyframes stretch {
+    0% {
+        width: 100px;
+    }
+
+    100% {
+        width: 80vw;
+    }
+}
+
+img {
+    max-width: 300px;
+    animation: shake 1s infinite alternate;
+}
+
+h1 {
+    font-family: "Smokum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Bitcount Prop Double Ink", system-ui;
+    animation: stretch 3s infinite;
+}
+
+p {
+    font-family: "Bitcount Prop Double Ink", system-ui;
+}
+
+
+.square {
+    background-color: navy;
+    width: 200px;
+    height: 400px;
+    margin: 75px auto;
+    transition: all 1s;
+    animation: flicker 2s infinite;
+    transform: rotate(360deg);
+    
+
+}
+
+@keyframes flicker {
+  0% {
+    color: white;
+    text-shadow: 0 0 10px white;
+  }
+  50% {
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+  }
+  100% {
+    color: white;
+    text-shadow: 0 0 10px white;
+  }
+}
+
+/*.square:hover {
+    background-color: rgb(255, 0, 221);
+    transform: rotate(30deg);
+} */
