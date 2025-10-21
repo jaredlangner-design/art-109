@@ -49,6 +49,6 @@ function mouseMoved() {
 
 function roundBrush(_x, _y) {
     noStroke();
-    fill(random(200, 255), random(200, 255), random(200, 255));
+    fill(random(150, 255), random(150, 255), random(150, 255));
     ellipse(_x, _y, 30, 30);
 }

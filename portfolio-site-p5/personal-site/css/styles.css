@@ -27,11 +27,33 @@ html, body {
 }
 
 body {
-    background: #f6f6f6;
+    animation: change-color 2s infinite alternate;
     margin: 0;
     font-family: "Bitcount Prop Double Ink", system-ui;
     font-size: 1.5rem;
     line-height: 1.4;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: #D6FAC3;
+    }
+
+    25% {
+        background-color: #C3B1E1;
+    }
+
+    50% {
+        background-color: #FF6961;
+    }
+
+    75% {
+        background-color: #A7C7E7;
+    }
+
+    100% {
+        background-color: #FAC898;
+    }
 }
 
 /* Basic styles for the navbar */
@@ -177,7 +199,7 @@ footer a:hover {
 /* HOME
 ------------------------------------*/
 .home {
-    background: url(../images/spooky_pumpkin.png) no-repeat;
+    background: url(../images/hard-image.jpg) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
