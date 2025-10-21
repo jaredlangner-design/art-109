@@ -27,10 +27,10 @@ html, body {
 }
 
 body {
-    animation: change-color 2s infinite alternate;
+    animation: change-color 30s infinite alternate;
     margin: 0;
     font-family: "Bitcount Prop Double Ink", system-ui;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     line-height: 1.4;
 }
 
@@ -44,7 +44,7 @@ body {
     }
 
     50% {
-        background-color: #FF6961;
+        background-color: #FAEDCB;
     }
 
     75% {
@@ -147,6 +147,7 @@ h1, h2, h3 {
     font-family: "Bitcount Prop Double Ink", system-ui;
     font-weight: 400;
     margin: 0;
+    text-align: center;
 }
 
 h1 {
@@ -160,6 +161,10 @@ h2 {
 
 h3 {
     font-size: 2.4rem;
+}
+
+p {
+    text-align: center;
 }
 
 /* links */
@@ -199,7 +204,7 @@ footer a:hover {
 /* HOME
 ------------------------------------*/
 .home {
-    background: url(../images/hard-image.jpg) no-repeat;
+    background: url(../images/hard-image-1.jpg) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -226,7 +231,7 @@ footer a:hover {
 /* RESUME
 ------------------------------------*/
 .resume header::before {
-    background: url(../images/spooky_scene.png) center;
+    background: url(../images/Dragon-ball.png) center;
     background-size: cover;
     content: "";
     display: block;
@@ -234,7 +239,7 @@ footer a:hover {
 }
 
 .resume-section {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .resume-section h2 {
@@ -272,8 +277,16 @@ footer a:hover {
 
 /* Projects
 ------------------------------------*/
+.projects header::before {
+    background: url(../images/spooky_scene.png) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+
 .project-item {
-    margin: 30px 0;
+    margin: 100px 0;
 }
 .project-item img {
     width: 300px;
