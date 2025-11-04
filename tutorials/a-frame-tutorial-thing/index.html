@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- <a-box position="-2 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box> -->
+      <a-assets>
+        <img id="my-image" src="images/Aliens.jpg">
+        <img id="my-image2" src="images/alien-2.jpg">
+        <img id="my-image3" src="images/alien-3.webp">
+        <img id="my-image4" src="images/alien-4.jpg">
+        <img id="my-image5" src="images/help.png">
+      </a-assets>
+
+      <!-- Using the asset management system. -->
+      <a-image position="-2 0.5 -3" rotation="0 45 0" scale="3 3" src="#my-image"></a-image>
+      <a-image position="2 0.5 -3" rotation="0 -45 0" scale="3 3" src="#my-image2"></a-image>
+      <a-image position="0 1.5 -10" rotation="0 0 0" scale="3 12" src="#my-image3"></a-image>
+      <a-image position="1 5 -3" rotation="90 -90 -90" scale="100 5" src="#my-image4"></a-image>
+      <a-image position="2 4 -3" rotation="0 120 0" scale="10000 3" src="#my-image5"></a-image>
+
+      <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+      <a-image src="images/Aliens.jpg"></a-image>
+      <a-image src="images/alien-2.jpg"></a-image>
+      <a-image src="images/alien-3.webp"></a-image>
+      <a-image src="images/alien-4.jpg"></a-image>
+      <a-image src="images/help.png"></a-image>
+      <!-- <a-sphere position="0 5 -10" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="10 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky> -->
+    </a-scene>
+  </body>
+</html>
