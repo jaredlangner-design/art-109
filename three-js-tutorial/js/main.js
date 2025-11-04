@@ -3,26 +3,20 @@
 
 
 //~~~~~~~Import Three.js (also linked to as import map in HTML)~~~~~~
-import * as THREE from 'three';
+// import * as THREE from 'three';
 
 // Import add-ons
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'; // to load 3d models
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+// import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 
 // ~~~~~~~~~~~~~~~~Create scene here~~~~~~~~~~~~~~~~
-let scene, camera, renderer, cone, ring;
+let scene, camera, renderer, cone, cube, ring;
 
 function init() {
     scene = new THREE.Scene();
 
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-    const light = new THREE.DirectionalLight(0xffffff, 3);
-
-    light.position.set(1,1,5);
-
-    scene.add(light);
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
 
@@ -40,13 +34,25 @@ function init() {
     scene.add( cone );
 
 
-    const geometry2 = new THREE.RingGeometry( 1, 5, 32 );
+
+    const geometry2 = new THREE.BoxGeometry( 2, 2, 2 );
     // const material = new THREE.MeshBasicMaterial( { color: 0x0000ff } );
 
-    const texture2 = new THREE.TextureLoader().load('textures/Ice.jpg');
+    const texture2 = new THREE.TextureLoader().load('textures/grass.jpg');
     const material2 = new THREE.MeshBasicMaterial( { map: texture2 } );
 
-    ring = new THREE.Mesh( geometry2, material2 );
+    cube = new THREE.Mesh( geometry2, material2 );
+    scene.add( cube );
+
+
+
+    const geometry3 = new THREE.RingGeometry( 1, 5, 32 );
+    // const material = new THREE.MeshBasicMaterial( { color: 0x0000ff } );
+
+    const texture3 = new THREE.TextureLoader().load('textures/Ice.jpg');
+    const material3 = new THREE.MeshBasicMaterial( { map: texture3 } );
+
+    ring = new THREE.Mesh( geometry3, material3 );
     scene.add( ring );
 
 camera.position.z = 5;
@@ -58,6 +64,10 @@ function animate() {
     cone.rotation.x += 0.01;
 
     cone.rotation.y += 0.01;
+
+    cube.rotation.x += 0.05;
+
+    cube.rotation.y += 0.05;
 
     ring.rotation.x += 0.1;
 
@@ -80,13 +90,9 @@ animate();
 
 
 // ~~~~~~~~~~~~~~~~ Initiate add-ons ~~~~~~~~~~~~~~~~
-const controls = new OrbitControls(camera, renderer.domElement);
+// const controls = new OrbitControls(camera, renderer.domElement);
+// const loader = new GLTFLoader(); // to load 3d models
 
-const loader = new GLTFLoader(); // to load 3d models
 
-loader.load("assets/pumpkin.gltf", function(gltf){
-    const model = gltf.scene;
-    scene.add(model);
-    model.scale.set(1.5, 1.5, 1.5);
-    model.position.y = -1.5
-})
+// →→→→→→ Follow next steps in tutorial: 
+// // https://threejs.org/docs/#manual/en/introduction/Creating-a-scene
