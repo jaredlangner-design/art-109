@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    animation: change-color 30s infinite alternate;
+    margin: 0;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: #D6FAC3;
+    }
+
+    25% {
+        background-color: #C3B1E1;
+    }
+
+    50% {
+        background-color: #FAEDCB;
+    }
+
+    75% {
+        background-color: #A7C7E7;
+    }
+
+    100% {
+        background-color: #FAC898;
+    }
+}
+
+.h1 {
+    text-align: center;
+}
+
+.h3 {
+    text-align: center;
+}
