@@ -126,7 +126,6 @@ body {
         top: 60px;
         left: 0;
         background-color: turquoise;
-        /* Green background for mobile view */
     }
 
     .nav-links.active {
