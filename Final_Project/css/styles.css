@@ -19,23 +19,15 @@ body {
 
 @keyframes change-color {
     0% {
-        background-color: #D6FAC3;
-    }
-
-    25% {
-        background-color: #C3B1E1;
+        background-color: #FAA0A0;
     }
 
     50% {
-        background-color: #FAEDCB;
-    }
-
-    75% {
-        background-color: #A7C7E7;
+        background-color: #ACD1AF;
     }
 
     100% {
-        background-color: #FAC898;
+        background-color: #AEC6CF;
     }
 }
 
